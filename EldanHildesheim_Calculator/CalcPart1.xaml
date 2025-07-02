@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="EldanHildesheim_Calculator.CalcPart1"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="CalcPart1">
+    <VerticalStackLayout BackgroundColor="black">
+        <Grid
+            Margin="20"
+            Padding="20"
+            BackgroundColor="#333"
+            ColumnDefinitions="*,*,*,.5*"
+            ColumnSpacing="10"
+            RowDefinitions="*,*,*,*,*,*"
+            RowSpacing="10">
+
+
+            <Border
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                Padding="10"
+                BackgroundColor="#7b9389"
+                HorizontalOptions="Fill"
+                Stroke="#80000000"
+                StrokeShape="RoundRectangle 10"
+                StrokeThickness="8">
+
+                <Label
+                    x:Name="lblScreen"
+                    Padding="20"
+                    BackgroundColor="#7b9389"
+                    FontFamily="Digital"
+                    FontSize="100"
+                    HorizontalOptions="End"
+                    HorizontalTextAlignment="End"
+                    TextColor="#1c1812" />
+            </Border>
+
+
+            <Button
+                Grid.Row="1"
+                Grid.Column="0"
+                BackgroundColor="DimGrey"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Dig_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="1"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <Button
+                Grid.Row="1"
+                Grid.Column="1"
+                BackgroundColor="DimGrey"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Dig_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="2"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <Button
+                Grid.Row="1"
+                Grid.Column="2"
+                BackgroundColor="DimGrey"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Dig_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="3"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <Button
+                Grid.Row="2"
+                Grid.Column="0"
+                BackgroundColor="DimGrey"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Dig_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="4"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <Button
+                Grid.Row="2"
+                Grid.Column="1"
+                BackgroundColor="DimGrey"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Dig_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="5"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <Button
+                Grid.Row="2"
+                Grid.Column="2"
+                BackgroundColor="DimGrey"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Dig_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="6"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <Button
+                Grid.Row="3"
+                Grid.Column="0"
+                BackgroundColor="DimGrey"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Dig_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="7"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <Button
+                Grid.Row="3"
+                Grid.Column="1"
+                BackgroundColor="DimGrey"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Dig_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="8"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <Button
+                Grid.Row="3"
+                Grid.Column="2"
+                BackgroundColor="DimGrey"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Dig_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="9"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <Button
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BackgroundColor="DimGrey"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Dig_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="0"
+                TextColor="White"
+                VerticalOptions="Center" />
+            <Button
+                Grid.Row="4"
+                Grid.Column="2"
+                BackgroundColor="Red"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Clear_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="Clear"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <Button
+                Grid.Row="1"
+                Grid.Column="3"
+                BackgroundColor="orange"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Action_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="+"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <Button
+                Grid.Row="2"
+                Grid.Column="3"
+                BackgroundColor="orange"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Action_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="-"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <Button
+                Grid.Row="3"
+                Grid.Column="3"
+                BackgroundColor="orange"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Action_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="*"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <Button
+                Grid.Row="4"
+                Grid.Column="3"
+                BackgroundColor="orange"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Action_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="/"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <Button
+                Grid.Row="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                BackgroundColor="Green"
+                BorderColor="#80000000"
+                BorderWidth="8"
+                Clicked="Button_Equal_Clicked"
+                CornerRadius="10"
+                FontSize="80"
+                Text="="
+                TextColor="White" />
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
