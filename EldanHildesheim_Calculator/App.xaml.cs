@@ -9,7 +9,7 @@ namespace EldanHildesheim_Calculator
 
     protected override Window CreateWindow(IActivationState? activationState)
     {
-      return new Window(new CalcPart2());
+      return new Window(new CalcPart1());
     }
   }
 }

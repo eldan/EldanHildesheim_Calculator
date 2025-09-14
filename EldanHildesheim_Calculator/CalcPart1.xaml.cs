@@ -72,9 +72,9 @@ public partial class CalcPart1 : ContentPage
     }
     
     lblScreen.Text += "="+total.ToString();
-    num1 = 0;
+    num1 = (int)total;
     num2 = 0;
-    mode = Mode.reset;
+    mode = Mode.numberTyped1;
   }
 
 
